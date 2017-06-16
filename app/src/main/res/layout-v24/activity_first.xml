@@ -1,0 +1,92 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#ffe58b2e"
+    tools:context="com.ingenios.recognition.FirstActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView android:id="@+id/fullscreen_content" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:keepScreenOn="true" android:textColor="#33b5e5"
+        android:textStyle="bold" android:textSize="50sp" android:gravity="center" />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout android:id="@+id/fullscreen_content_controls" style="?metaButtonBarStyle"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent"
+            android:weightSum="1">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="INGRESAR VALOR"
+                android:id="@+id/textView"
+                android:textStyle="bold"
+                android:textSize="40dp"
+                android:gravity="center_horizontal"
+                android:paddingBottom="20dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+    
+                <EditText
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/editText"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold"
+                    android:textSize="45dp"
+                    android:background="#ffffffff" />
+    
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/imageButton"
+                    android:layout_gravity="center"
+                    android:background="#00d67820"
+                    android:src="@drawable/mic"
+                    android:padding="10dp"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+            <Button android:id="@+id/ok_button"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textColor="#ffffffff"
+                android:text="CONTINUAR"
+                android:textSize="36dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#ff5d5d5d"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

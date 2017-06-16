@@ -1,0 +1,90 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#ff94d527"
+    tools:context="com.ingenios.recognition.FirstActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView android:id="@+id/fullscreen_content" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:keepScreenOn="true"
+        android:textStyle="bold" android:textSize="45sp" android:gravity="center" />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="center_vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="0dp"
+            android:layout_marginBottom="40dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/fin"
+                android:id="@+id/tvTitle"
+                android:textStyle="bold"
+                android:textSize="40dp"
+                android:gravity="center_horizontal"
+                android:paddingBottom="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/otra_compra"
+                android:id="@+id/tvQuestion"
+                android:textStyle="bold"
+                android:textSize="40dp"
+                android:gravity="center_horizontal"
+                android:paddingBottom="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:textColor="#ff000000" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/no_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff000000"
+                    android:text="@string/no"
+                    android:textSize="36dp"
+                    android:paddingTop="22dp"
+                    android:paddingBottom="22dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:background="@drawable/exitbutton"
+                    android:clickable="true" />
+
+                <Button android:id="@+id/ok_button"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textColor="#ffffffff"
+                    android:text="@string/si"
+                    android:textSize="36dp"
+                    android:paddingTop="22dp"
+                    android:paddingBottom="22dp"
+                    android:layout_gravity="right"
+                    android:textStyle="bold"
+                    android:background="@drawable/yesbutton"
+                    android:layout_marginLeft="30dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    xmlns:opencv="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <com.ingenios.recognition.util.MyCameraJavaView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone"
+            android:id="@+id/show_camera_activity_java_surface_view"
+            opencv:show_fps="false"
+            opencv:camera_id="any"
+            android:nestedScrollingEnabled="false"
+            android:layout_gravity="bottom" />
+
+    <LinearLayout
+        android:rotation="-90"
+        android:orientation="vertical"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$250"
+            android:id="@+id/tvPrecio"
+            android:textStyle="bold"
+            android:singleLine="false"
+            android:textColor="@color/priceGreen"
+            android:textSize="56dp"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            style="@style/OverlayText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:id="@+id/tvMessage"
+            android:textColor="#fffffe29"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:text="$0"
+            android:layout_below="@+id/tvPrecio"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <TextView
+        android:rotation="-90"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/tvPosibles"
+        android:textColor="#ffffffff"
+        android:singleLine="false"
+        android:phoneNumber="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="#00929292"
+        android:text="mensaje"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentLeft="false"
+        android:id="@+id/linearLayout2">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/btnClose"
+                android:background="@drawable/cancelar"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:scaleType="fitXY"
+                android:layout_above="@+id/linearLayout"
+                android:layout_alignRight="@+id/shoot"
+                android:layout_alignEnd="@+id/shoot"
+                android:layout_gravity="center"
+                android:layout_marginBottom="90dp" />
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/shoot"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:scaleType="fitXY"
+                android:background="@drawable/boton"
+                android:layout_gravity="center" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

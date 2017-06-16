@@ -1,0 +1,42 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#ffffffff"
+    tools:context="com.ingenios.recognition.SplashActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/logoSplash"
+            android:layout_gravity="center"
+            android:background="@drawable/icon"
+            android:longClickable="true"
+            android:layout_marginBottom="40dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/title_activity_splash"
+        android:id="@+id/title"
+        android:layout_gravity="bottom|center_horizontal"
+        android:textColor="#ff929292"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"
+        android:textSize="30dp" />
+
+</FrameLayout>

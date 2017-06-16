@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">recognition</string>
+    <string name="action_settings">SETTINGS</string>
+    <string name="continuar">CONTINUE</string>
+    <string name="dime_importe">SAY PRICE</string>
+    <string name="falta_plural">MISSING</string>
+    <string name="falta_singular">MISSING</string>
+    <string name="ingresa_importe">INPUT PRICE</string>
+    <string name="fin">FINISHED!</string>
+    <string name="lee_billete">TAKE A PHOTO</string>
+    <string name="moneda_plural">DOLLARS</string>
+    <string name="moneda_singular">DOLLAR</string>
+    <string name="no">NO</string>
+    <string name="no_pude_reconocer">I CAN´T READ THE BILL, TRY AGAIN PLEASE</string>
+    <string name="no_recibe_vuelto">CERO TO GET BACK</string>
+    <string name="otra_compra">WOULD YOU MAKE A NEW PURCHASE?</string>
+    <string name="otro_billete">ANOTHER BILL</string>
+    <string name="por_favor">PLEASE</string>
+    <string name="recibe_vuelto">N$ TO GET BACK</string>
+    <string name="salir">EXIT</string>
+    <string name="si">YES</string>
+    <string name="title_activity_splash">Money Helper</string>
+</resources>

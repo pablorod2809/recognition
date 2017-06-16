@@ -1,0 +1,128 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#ffe58b2e"
+    tools:context="com.ingenios.recognition.FirstActivity"
+    android:id="@+id/firstLayout">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView android:id="@+id/fullscreen_content" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:keepScreenOn="true"
+        android:textStyle="bold" android:textSize="50sp" android:gravity="center" />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="50dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/ingresa_importe"
+                android:id="@+id/textView"
+                android:textStyle="bold"
+                android:textSize="40dp"
+                android:gravity="center_horizontal"
+                android:paddingBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:weightSum="1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/roundinput"
+                android:gravity="center_vertical|right|center_horizontal"
+                android:transitionGroup="false">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="$"
+                    android:id="@+id/symbol"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:singleLine="false"
+                    android:textSize="45dp"
+                    android:textColor="#ff000000"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="center_vertical" />
+
+                <EditText
+                    android:layout_width="156dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/edtPrice"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ff000000"
+                    android:textStyle="bold"
+                    android:textSize="45dp"
+                    android:background="#ffffffff"
+                    android:elegantTextHeight="false"
+                    android:editable="false"
+                    android:gravity="center_vertical|right"
+                    android:enabled="true"
+                    android:textIsSelectable="false"
+                    android:selectAllOnFocus="false"
+                    android:layout_weight="0.53"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/imageButton"
+                    android:src="@drawable/mic"
+                    android:scaleType="fitXY"
+                    android:padding="15dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/roundmicbutton" />
+            </LinearLayout>
+
+            <Button android:id="@+id/ok_button"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textColor="#ffffffff"
+                android:text="@string/continuar"
+                android:textSize="36dp"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textStyle="bold"
+                android:background="@drawable/roundbutton" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/exit_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:textColor="#ff707070"
+            android:textSize="24dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:textStyle="bold"
+            android:background="@drawable/cancelar"
+            android:layout_marginBottom="20dp" />
+
+    </FrameLayout>
+
+</FrameLayout>
